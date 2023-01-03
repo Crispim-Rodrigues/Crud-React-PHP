@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    --cor-principal: rgb(38, 7, 66);
+}
+body{
+    background-color: rgb(50, 9, 87);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header{
+    position: relative;
+    height: auto;
+    display: flex;
+    padding: 0 2%;
+    background-color: var(--cor-principal);
+    color: white;
+}
+header .logo{
+    height: 100%;
+    padding: calc(70px / 4) 0;
+}
+header h1{
+    font-weight: 400;
+}
+.logo{
+    width: 80%;
+}
+
+/* icon menu */
+label{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    width: 30px;
+    cursor:pointer;
+    align-items: flex-end;
+}
+   
+label span{
+    background: #fff;
+    border-radius:10px;
+    height: 4px;
+    margin: 3px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+}
+   
+   
+span:nth-of-type(1){
+    width:50%;
+     
+}
+   
+span:nth-of-type(2){
+    width:100%;
+}
+   
+   
+span:nth-of-type(3){
+    width:75%;
+    
+}
+   
+   
+input[type="checkbox"]{
+    display:none;
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(0px, 10px);
+    opacity: 0;
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    
+    transform-origin:top;
+    transform:rotatez(-45deg);
+    width: 100%;
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    
+    transform-origin:bottom;
+    width:100%;
+    transform: translate( 0px,-11px) rotatez(45deg);
+
+}
+/* fim icon menu */
+/* fim Header */
