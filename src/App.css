@@ -2,9 +2,11 @@
 
 :root {
     --cor-principal: rgb(38, 7, 66);
+    --cor-fundo: rgb(50, 9, 87);
 }
 body{
-    background-color: rgb(50, 9, 87);
+    background-color: var(--cor-fundo);
+    overflow-x: hidden;
 }
 
 *{
@@ -31,11 +33,11 @@ header h1{
     font-weight: 400;
 }
 .logo{
-    width: 80%;
+    width: 90%;
 }
 
 /* icon menu */
-label{
+.icon{
     position: absolute;
     right: 2%;
     top: 50%;
@@ -47,7 +49,7 @@ label{
     align-items: flex-end;
 }
    
-label span{
+.icon span{
     background: #fff;
     border-radius:10px;
     height: 4px;
@@ -57,35 +59,35 @@ label span{
 }
    
    
-span:nth-of-type(1){
+.icon span:nth-of-type(1){
     width:50%;
      
 }
    
-span:nth-of-type(2){
+.icon span:nth-of-type(2){
     width:100%;
 }
    
    
-span:nth-of-type(3){
+.icon span:nth-of-type(3){
     width:75%;
     
 }
    
    
-input[type="checkbox"]{
+.icon input[type="checkbox"]{
     display:none;
 }
 
 
-input[type="checkbox"]:checked ~ span:nth-of-type(1){
+.icon input[type="checkbox"]:checked ~ span:nth-of-type(1){
     transform-origin:bottom;
     transform:rotatez(45deg) translate(0px, 10px);
     opacity: 0;
 }
 
 
-input[type="checkbox"]:checked ~ span:nth-of-type(2){
+.icon input[type="checkbox"]:checked ~ span:nth-of-type(2){
     
     transform-origin:top;
     transform:rotatez(-45deg);
@@ -93,7 +95,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
 }
 
 
-input[type="checkbox"]:checked ~ span:nth-of-type(3){
+.icon input[type="checkbox"]:checked ~ span:nth-of-type(3){
     
     transform-origin:bottom;
     width:100%;
@@ -101,4 +103,65 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
 }
 /* fim icon menu */
+/* form add cliente */
+.addcliente{
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    width: 300px;
+    height: auto;
+    background-color: var(--cor-principal);
+    transition: 0.5s ease;
+}
+.close{
+    right: -300px;
+}
+.text_form h3{
+    padding: 20px 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px 5%;
+}
+.form input {
+    text-align: center;
+    height: 30px;
+    width: calc(100% - 40px);
+    border-radius: 30px;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+
+}
+.form input[type='submit']{
+    width: 70%;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgba(136, 0, 255, 0.418);
+    height: 30px;
+    margin: 30px 0;
+}
+.form select{
+    text-align: center;
+    height: 30px;
+    width: calc(100% - 160px);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.form form .label{
+    margin: 0 30px;
+}
+.form form .label:nth-last-of-type(1) span{
+    margin: 0 10px;
+}
+.form form .label:nth-last-of-type(2) span{
+    margin: 0 22px;
+}
+.form form .label:nth-last-of-type(3) span{
+    margin: 0 29px;
+}
 /* fim Header */
