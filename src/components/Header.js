@@ -31,7 +31,7 @@ function Header() {
         setPlaca('');
         setTipo('20');
         setStatus('Cheio');
-        setCategoria('Categoria');
+        setCategoria('Exportação');
     };
 
 
