@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 :root {
-    --cor-principal: rgb(38, 7, 66);
-    --cor-fundo: rgb(50, 9, 87);
+    --cor-principal: rgb(13, 7, 66);
+    --cor-fundo: rgb(13, 9, 87);
 }
 body{
     background-color: var(--cor-fundo);
@@ -165,3 +165,42 @@ header h1{
     margin: 0 29px;
 }
 /* fim Header */
+/* Table Cliente */
+.Tabela_cliente{
+    width: 100%;
+    margin: 20px 0;
+}
+.Tabela_cliente h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.Tabela_cliente table{
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+}
+.Tabela_cliente_titulo th{
+    padding: 10px 20px;
+    color: rgb(13, 85, 255);
+    border-bottom: 1px solid white;
+}
+.Tabela_cliente_informação td{
+    padding: 10px 10px;
+} 
+.Tabela_cliente_informação td a{
+    padding: 0 10px;
+    margin: 0 4px;  
+    text-decoration: none;
+    font-weight: 600;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+.Tabela_cliente_informação td a:first-of-type{
+    background-color: red;
+    color: black;   
+}
+/* fim table cliente */

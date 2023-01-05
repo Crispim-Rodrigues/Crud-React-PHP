@@ -10,8 +10,8 @@ function Header() {
     const [status, setStatus] = useState('Cheio');
     const [categoria, setCategoria] = useState('Exportação');
     
-    function enviar(event){
-        event.preventDefault();
+    function enviar(){
+        
 
         const url = "http://localhost/crud/src/api/novo_cliente.php";
         let fData = new FormData();
