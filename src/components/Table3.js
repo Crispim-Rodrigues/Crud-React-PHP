@@ -37,7 +37,7 @@ function Table3(){
                         )})
                     }
                     <tr>
-                        <th>Total</th>
+                        <th colSpan={2}>Total</th>
                         <th>{dataM.length}</th>
                     </tr>   
                 </tbody>   

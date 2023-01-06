@@ -204,3 +204,69 @@ header h1{
     color: black;   
 }
 /* fim table cliente */
+/* inicio do formulario de edição do cliente */
+.editar_main{
+    display: none;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+.editar_main .close_btn{
+    cursor: pointer;
+    width: 20px;
+    position: relative;
+    left: 1%;
+    top: 1%;
+}
+.editar_container{
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: white;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 4px 4px black ;
+    padding: 0 1%;
+}
+.editar_container h2{
+    text-align: center;
+    color: rgb(0, 22, 73);
+    padding: 10px;
+    
+}
+.editar_container form input{
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+
+}
+.editar_container form select{
+    border-radius: 10px;
+    padding: 0 10px;
+    text-align: center;
+}
+.editar_container form .span_edt{
+    padding: 0px 19px;
+}
+.editar_container form .span_edt2{
+    padding: 0 12px;
+}
+.editar_container form input[type='submit']{
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px 20%;
+    padding: 5px 0;
+    cursor: pointer;
+    background-color: rgb(13, 85, 255);
+    color: white;
+    border: none;
+}
+/* fim editar cliente */
