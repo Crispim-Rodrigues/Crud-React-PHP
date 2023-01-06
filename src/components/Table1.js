@@ -71,7 +71,6 @@ function Table1(){
         .catch(error=> alert(error));
         window.location.reload();
     };
-    
 
     return(
         <section className="Tabela_cliente">

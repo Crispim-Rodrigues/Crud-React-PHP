@@ -270,3 +270,27 @@ header h1{
     border: none;
 }
 /* fim editar cliente */
+/* inicio editar movimentação */
+.editar_main1{
+    display: none;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+.editar_main1 .close_btn{
+    cursor: pointer;
+    width: 20px;
+    position: relative;
+    left: 1%;
+    top: 1%;
+}
+.editar_main1 > .editar_container form select{
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.editar_main1 > .editar_container form input{
+    border: 1px solid gray;
+}
