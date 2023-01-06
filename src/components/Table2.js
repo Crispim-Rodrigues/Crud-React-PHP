@@ -81,7 +81,7 @@ function Table2(){
                             <td>{data['data final']}</td>
                             <td>
                                 <a href="/#" onClick={e=>excluir(e,data.id)}>Excluir</a>
-                                <a href="/#" onClick={e=>editar(e,data.id, data.cliente, data.movimentacao, data['data inicio'], data['data final'] )}>Editar</a>
+                                <a href="/#" onClick={e=>editar(e,data.id, data.movimentacao, data['data inicio'], data['data final'] )}>Editar</a>
                             </td>
                         </tr>
                         )})
